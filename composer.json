@@ -1,28 +1,27 @@
 {
-    "name": "asantibanez/livewire-resource-time-grid",
+    "name": "d4ve-r/livewire-resource-time-grid",
     "description": "Laravel Livewire resource time grid component",
     "keywords": [
         "asantibanez",
         "livewire-resource-time-grid"
     ],
-    "homepage": "https://github.com/asantibanez/livewire-resource-time-grid",
+    "homepage": "https://github.com/d4ve-r/livewire-resource-time-grid",
     "license": "MIT",
     "type": "library",
     "authors": [
         {
-            "name": "Andrés Santibáñez",
-            "email": "santibanez.andres@gmail.com",
+            "name": "David Rechkemmer",
             "role": "Developer"
         }
     ],
     "require": {
         "php": "^7.2|^8.0|^8.1",
-        "illuminate/support": "^7.0|^8.0|^9.0|^10.0",
-        "livewire/livewire": "^1.0|^2.0"
+        "illuminate/support": "^7.0|^8.0|^9.0|^10.0|^11.0",
+        "livewire/livewire": "^1.0|^2.0|^3.4"
     },
     "require-dev": {
-        "orchestra/testbench": "^5.0|^6.0|^7.0",
-        "phpunit/phpunit": "^8.0|^9.0"
+        "orchestra/testbench": "^5.0|^6.0|^7.0|^9.0",
+        "phpunit/phpunit": "^8.0|^9.0|^10.5"
     },
     "autoload": {
         "psr-4": {
