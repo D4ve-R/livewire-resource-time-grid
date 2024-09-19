@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Asantibanez\\LivewireResourceTimeGrid\\": "src"
+            "D4veR\\LivewireResourceTimeGrid\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Asantibanez\\LivewireResourceTimeGrid\\Tests\\": "tests"
+            "D4veR\\LivewireResourceTimeGrid\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,5 +47,7 @@
                 "Asantibanez\\LivewireResourceTimeGrid\\LivewireResourceTimeGridServiceProvider"
             ]
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
