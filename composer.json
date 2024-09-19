@@ -2,7 +2,7 @@
     "name": "d4ve-r/livewire-resource-time-grid",
     "description": "Laravel Livewire resource time grid component",
     "keywords": [
-        "asantibanez",
+        "livewire",
         "livewire-resource-time-grid"
     ],
     "homepage": "https://github.com/d4ve-r/livewire-resource-time-grid",
@@ -44,7 +44,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Asantibanez\\LivewireResourceTimeGrid\\LivewireResourceTimeGridServiceProvider"
+                "D4veR\\LivewireResourceTimeGrid\\LivewireResourceTimeGridServiceProvider"
             ]
         }
     },
