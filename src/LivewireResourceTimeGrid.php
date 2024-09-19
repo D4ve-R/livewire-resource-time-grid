@@ -1,6 +1,6 @@
 <?php
 
-namespace Asantibanez\LivewireResourceTimeGrid;
+namespace D4veR\LivewireResourceTimeGrid;
 
 use Carbon\Carbon;
 use Illuminate\Support\Collection;

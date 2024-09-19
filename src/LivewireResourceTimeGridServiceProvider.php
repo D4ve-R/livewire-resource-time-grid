@@ -1,6 +1,6 @@
 <?php
 
-namespace Asantibanez\LivewireResourceTimeGrid;
+namespace D4veR\LivewireResourceTimeGrid;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
