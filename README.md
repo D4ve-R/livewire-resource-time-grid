@@ -6,7 +6,7 @@ rendered in columns according to the resource it belongs to and the starting dat
 
 ## Preview
 
-![preview](https://github.com/asantibanez/livewire-resource-time-grid/raw/master/preview.gif)
+![preview](https://github.com/d4ve-r/livewire-resource-time-grid/raw/master/assets/preview.gif)
 
 ## Installation
 
@@ -134,7 +134,7 @@ You must include them after `@livewireScripts`
 
 This will render a grid starting from 8am til 7pm inclusive with time slots of 15 minutes.
 
-![example](https://github.com/asantibanez/livewire-resource-time-grid/raw/master/example.png)
+![example](https://github.com/d4ve-r/livewire-resource-time-grid/raw/master/assets/example.png)
 
 By default, the component uses all the available width and height. 
 You can constrain it to use a specific set of dimensions with a wrapper element.
