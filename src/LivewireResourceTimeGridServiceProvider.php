@@ -53,7 +53,9 @@ class LivewireResourceTimeGridServiceProvider extends ServiceProvider
                     element.className = element.className.replace('bg-indigo-100', '');
 
                     const eventId = event.dataTransfer.getData('id');
-                    window.Livewire.find(componentId).call('onEventDropped', eventId, resourceId, hour, slot);
+                    const component = window.Livewire.find(componentId);
+                    if (component) component.call('onEventDropped', eventId, resourceId, hour, slot);
+                    else console.error(`LivewireResourceTimeGrid: component ${componentId} not found`);
                 }
             </script>
 HTML;
