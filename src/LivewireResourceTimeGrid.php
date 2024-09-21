@@ -8,7 +8,7 @@ use Livewire\Component;
 
 /**
  * Class LivewireResourceTimeGrid
- * @package Asantibanez\LivewireResourceTimeGrid
+ * @package D4veR\LivewireResourceTimeGrid
  * @property string $gridView
  * @property string $hoursColumnView
  * @property string $hourView
@@ -19,7 +19,7 @@ use Livewire\Component;
  * @property int $hourHeightInRems
  * @property int $resourceColumnHeaderHeightInRems
  */
-class LivewireResourceTimeGrid extends Component
+abstract class LivewireResourceTimeGrid extends Component
 {
     public $startingHour;
     public $endingHour;
@@ -39,21 +39,22 @@ class LivewireResourceTimeGrid extends Component
     public $beforeGridView;
     public $afterGridView;
 
-    public function mount($startingHour,
-                          $endingHour,
-                          $interval,
-                          $gridView = null,
-                          $hoursColumnView = null,
-                          $hourView = null,
-                          $resourceColumnView = null,
-                          $resourceColumnHeaderView = null,
-                          $resourceColumnHourSlotView = null,
-                          $eventView = null,
-                          $beforeGridView = null,
-                          $afterGridView = null,
-                          $resourceColumnHeaderHeightInRems = 4,
-                          $hourHeightInRems = 8,
-                          $extras = null)
+    public function mount(
+        $startingHour,
+        $endingHour,
+        $interval,
+        $gridView = null,
+        $hoursColumnView = null,
+        $hourView = null,
+        $resourceColumnView = null,
+        $resourceColumnHeaderView = null,
+        $resourceColumnHourSlotView = null,
+        $eventView = null,
+        $beforeGridView = null,
+        $afterGridView = null,
+        $resourceColumnHeaderHeightInRems = 4,
+        $hourHeightInRems = 8,
+        $extras = null)
     {
         $this->startingHour = $startingHour;
         $this->endingHour = $endingHour;
@@ -81,15 +82,9 @@ class LivewireResourceTimeGrid extends Component
         //
     }
 
-    public function resources()
-    {
-        return collect();
-    }
+    abstract public function resources(): Collection;
 
-    public function events()
-    {
-        return collect();
-    }
+    abstract public function events(): Collection;
 
     public function isEventForResource($event, $resource)
     {
